@@ -200,6 +200,10 @@
         .stitches-sprite(-322px, -99px, 23px, 23px);
     }
 
+    &.sprite-53 {
+        .stitches-sprite(-30px, -99px, 9px, 5px);
+    }
+
     &.sprite-6 {
         .stitches-sprite(-303px, -219px, 40px, 40px);
     }
@@ -209,7 +213,7 @@
     }
 
     &.sprite-8 {
-        .stitches-sprite(-30px, -103px, 13px, 11px);
+        .stitches-sprite(-105px, -103px, 13px, 11px);
     }
 
     &.sprite-9 {
