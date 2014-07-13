@@ -6,6 +6,7 @@ $(document).ready(function(){
 	slider();
 	$("a.anchorLink").anchorAnimate();
 	tabs();
+	number();
 });
 
 function catalog() {
@@ -34,6 +35,22 @@ function slider() {
 		paginationSpeed : 500,
 		singleItem:true,
 		autoPlay:10000
+	});
+	$("#deals_slider_full").owlCarousel({
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 500,
+		paginationSpeed : 500,
+		autoPlay:5000,
+		itemsCustom : [
+			[0, 5],
+			[450, 5],
+			[600, 5],
+			[700, 5],
+			[1000, 5],
+			[1200, 5],
+			[1400, 5],
+			[1600, 5]
+		],
 	});
 	$("#main_slider").owlCarousel({
 		navigation : true, // Show next and prev buttons
@@ -90,3 +107,23 @@ function tabs() {
 	});
 }
 
+function number() {
+	$('.number').each(function(){
+		var input = $(this).parent().find('input[type="text"]'),
+			val =input.val();
+
+		$(this).find('a.top').on('click',function(){
+			input.val(parseInt(val) + 1);
+			val =input.val();
+		});
+		$(this).find('a.bottom').on('click',function(){
+			input.val(parseInt(val) - 1);
+
+			if(val <= 1){
+				val =input.val(1);
+			}
+			val =input.val();
+		});
+
+	});
+}
