@@ -5,6 +5,7 @@ $(document).ready(function(){
 	catalog();
 	slider();
 	$("a.anchorLink").anchorAnimate();
+	tabs();
 });
 
 function catalog() {
@@ -79,3 +80,13 @@ jQuery.fn.anchorAnimate = function(settings) {
 		})
 	})
 }
+
+function tabs() {
+	$('.tabs_list a').on('click', function(){
+		var tab = $(this).data('tab');
+
+		$('.tab').removeClass('active');
+		$(tab).addClass('active');
+	});
+}
+
