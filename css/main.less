@@ -688,7 +688,7 @@ p {
         background: #fff;
         padding: 10px 0 0 0;
 
-        .f_left {
+        & > .f_left {
             width: 264px;
             .box-sizing(border-box);
             padding: 0 10px;
@@ -952,7 +952,7 @@ p {
             }// END .news
         }
 
-        .f_right {
+        & > .f_right {
             width: 264px;
             .box-sizing(border-box);
             padding: 0 10px;
@@ -1241,6 +1241,83 @@ p {
                 font-size: 16pt;
                 font-family: 'pf_din_text_cond_promedium';
             }
+
+            .product_block {
+                padding-top: 22px;
+
+                & > .f_left {
+                    margin: 0 0 0 17px;
+                    width: 307px;
+
+                    .img_block {
+                        display: table;
+                        width: 307px;
+                        height: 307px;
+                        border:1px solid #e0e0e0;
+                        overflow: hidden;
+
+                        .tab {
+                            width: 307px;
+                            height: 307px;
+                            overflow: hidden;
+                            vertical-align: middle;
+                            text-align: center;
+                            display: none;
+                            position: relative;
+
+                            &.active {
+                                display: table-cell;
+                            }
+
+                            img {
+                                max-width: 100%;
+                            }
+
+                            a {
+                                .sprite;
+                                .sprite-52;
+                                position: absolute;
+                                right: 5px;
+                                bottom: 5px;
+                            }
+                        }
+                    }// END .img_block
+
+                    .tabs_list {
+                        margin: 10px 0 0 0;
+                        li {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 71px;
+                            height: 71px;
+                            border:1px solid #e0e0e0;
+                            overflow: hidden;
+                            margin: 0 7px 0 0;
+
+                            div {
+                                display: table;
+                                a {
+                                    display: table-cell;
+                                    text-align: center;
+                                    width: 71px;
+                                    height: 71px;
+                                    vertical-align: middle;
+
+                                    img {
+                                        max-width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }// END .tabs_list
+                }
+
+                & > .f_right {
+                    width: auto;
+                    float: none;
+                    margin: 0 0 0 327px;
+                }
+            }// END .product_block
         }
     }// END #content_wraper
 }// END #content
@@ -1693,3 +1770,4 @@ p {
     font-size: 30pt;
     letter-spacing: 2px;
 }// END .big_title
+
