@@ -1,0 +1,277 @@
+@media (max-width:1250px){
+	.main_container {
+		width: 95%;
+	}
+
+	#header {
+		section {
+			padding-bottom: 15px;
+
+			& > ul {
+				& > li {
+					&.logo_block {
+						width: 40%;
+					}
+
+					&.info_block {
+						border-right:0;
+						width: 50%;
+					}
+
+					&.basket_block {
+						padding-top: 10px;
+						float: none;
+						clear: both;
+
+						div {
+							width:250px;
+							float: none;
+						}
+					}
+				}
+			}
+		}
+	}// END #header
+
+	#search_block {
+		.f_left {
+			nav {
+				ul {
+					li {
+						padding: 0 10px;
+
+						a {
+							font-size: 10pt;
+						}
+					}
+				}
+			}
+
+			&.year {
+				height: 114px;
+				width: 200px;
+				margin-left: 2.5%;
+
+				h3 {
+					font-size: 26pt;
+				}
+
+				p {
+					font-size: 13pt;
+				}
+			}
+		}
+
+		// .download {
+		// 	width: 180px;
+		// 	display: block;
+		// 	margin: 20px 20px 0 0;
+		// 	font-size: 13pt;
+
+		// }// END .download
+	}// END #search_block
+
+	.deals {
+
+	    .owl-carousel {
+
+	        &.full {
+	            .item {
+	                .product_block {
+	                    border-bottom: 0;
+
+	                    .old_price {
+	                    	float: none;
+	                    	clear: both;
+	                    	margin-left: 20px;
+	                    	padding-top: 0;
+	                    }
+
+	                    a {
+	                    	display: block;
+	                    }
+	                }
+	            }
+	        }
+	    }// END #news_slider
+	}// END .deals
+}
+@media (max-width:1150px){
+
+	#header {
+		section {
+			padding-bottom: 15px;
+
+			& > ul {
+				& > li {
+					&.logo_block {
+						width: 50%;
+					}
+
+					&.info_block {
+						border-right:0;
+						width: 50%;
+					}
+
+					&.basket_block {
+						float:right;
+					}
+				}
+			}
+		}
+	}// END #header
+
+
+	#search_block {
+		.f_left {
+			nav {
+				ul {
+					li {
+						a {
+							font-size: 9pt;
+						}
+					}
+				}
+			}
+
+			&.year {
+				height: 114px;
+				width: 190px;
+				float: right;
+
+				h3 {
+					font-size: 24pt;
+				}
+
+				p {
+					font-size: 12pt;
+				}
+			}
+		}
+
+		.download {
+			width: 150px;
+			display: block;
+			margin: 20px 20px 0 0;
+			font-size: 12pt;
+		}// END .download
+	}// END #search_block
+
+	#content_wraper {
+	    & > .f_left {
+	        width: 234px;
+
+	        .catalog {
+	            h3 {
+	                font-size: 14pt;
+	            }
+
+	            & > ul {
+	                & > li {
+	                    margin-bottom: 2px;
+
+	                    & > a {
+	                    	font-size: 10pt;
+	                    }
+
+	                    ul {
+	                        padding-top: 5px;
+	                        display: none;
+
+	                        li {
+	                            a {
+	                            	font-size: 10pt;
+	                            }
+	                        }
+	                    }
+	                }
+	            }
+	        }// END .catalog
+
+	        .news {
+	            h3 {
+	                font-size: 14pt;
+	            }
+
+	            .top_block {
+	                a {
+	                	font-size: 10pt;
+	                }
+	            }
+
+	            #news_slider {
+	                width: 90%;
+
+	                .owl-controls {
+	                    .owl-pagination {
+	                        .owl-page {
+	                            span {
+	                                width: 12px;
+	                                height: 12px;
+	                            }
+	                        }
+	                    }
+	                }
+	            }// END #news_slider
+	        }// END .news
+	    }
+
+	    & > .f_right {
+	        width: 234px;
+	    }
+
+	    .center_block {
+	        width: auto;
+	        margin: 0 240px;
+
+	        #main_slider {
+	            .item {
+	                .info_block {
+	                    p {
+	                        font-size: 20pt;
+	                    }
+	                }
+	            } 
+	        }
+	    }
+	}// END #content_wraper
+
+
+	.deals {
+	    h3 {
+	        font-size: 14pt;
+	    }
+
+	    .top_block {
+	        a {
+	        	font-size: 10pt;
+	        }
+	    }
+
+	    .owl-carousel {
+
+	        &.full {
+	            .item {
+	                .product_block {
+	                    min-height: 195px;
+	                    width: 230px;
+	                    max-width: 90%;
+	                    margin: auto;
+	                    padding-bottom: 15px!important;
+	                }
+	            }
+	        }
+
+	        .owl-controls {
+	            .owl-pagination {
+	                .owl-page {
+	                    span {
+	                        width: 12px;
+	                        height: 12px;
+	                    }
+	                }
+	            }
+	        }
+	    }// END #news_slider
+	}// END .deals
+}

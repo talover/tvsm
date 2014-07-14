@@ -7,6 +7,8 @@ $(document).ready(function(){
 	$("a.anchorLink").anchorAnimate();
 	tabs();
 	number();
+	password();
+	popup();
 });
 
 function catalog() {
@@ -125,5 +127,17 @@ function number() {
 			val =input.val();
 		});
 
+	});
+}
+
+function password() {
+	$('#password_btn').on('click',function(){
+		$('#new_password').slideToggle()
+	});
+}
+
+function popup() {
+	$("#registration_btn").click(function() {
+		$.fancybox( {href : '#registration_popup', padding : 0, wrapCSS: "popup"} );
 	});
 }
