@@ -9,6 +9,9 @@ $(document).ready(function(){
 	number();
 	password();
 	popup();
+	legal_entity();
+	legal_entity_btn();
+	fancybox();
 });
 
 function catalog() {
@@ -137,7 +140,30 @@ function password() {
 }
 
 function popup() {
-	$("#registration_btn").click(function() {
-		$.fancybox( {href : '#registration_popup', padding : 0, wrapCSS: "popup"} );
+	$("#enter_btn").click(function() {
+		$.fancybox( {href : '#enter_popup', padding : 0, wrapCSS: "popup"} );
 	});
 }
+
+function legal_entity() {
+	if($("#legal_entity").is(':checked')){
+		$('.legal_entity').slideDown();
+	}else {
+		$('.legal_entity').slideUp();
+	}
+}
+
+function legal_entity_btn() {
+	$("#legal_entity").on('change',function(){
+		legal_entity();
+		$('input, select').styler(function(){legal_entity();}); 
+	});
+}
+
+function fancybox() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+}
+
