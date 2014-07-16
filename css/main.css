@@ -1250,7 +1250,7 @@ p {
 #content_wraper .center_block .product_block > .f_left .img_block .tab img {
   max-width: 100%;
 }
-#content_wraper .center_block .product_block > .f_left .img_block .tab a {
+#content_wraper .center_block .product_block > .f_left .img_block .tab span {
   background-image: url(images/spritesheet.png);
   background-repeat: no-repeat;
   display: block;
