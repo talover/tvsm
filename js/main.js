@@ -32,20 +32,17 @@ function slider() {
 		slideSpeed : 500,
 		paginationSpeed : 500,
 		singleItem:true,
-		autoPlay:10000
 	});
 	$("#deals_slider").owlCarousel({
 		navigation : true, // Show next and prev buttons
 		slideSpeed : 500,
 		paginationSpeed : 500,
 		singleItem:true,
-		autoPlay:10000
 	});
 	$("#deals_slider_full").owlCarousel({
 		navigation : true, // Show next and prev buttons
 		slideSpeed : 500,
 		paginationSpeed : 500,
-		autoPlay:5000,
 		itemsCustom : [
 			[0, 5],
 			[450, 5],
@@ -68,7 +65,6 @@ function slider() {
 		navigation : true, // Show next and prev buttons
 		slideSpeed : 500,
 		paginationSpeed : 500,
-		autoPlay:5000,
 		itemsCustom : [
 			[0, 5],
 			[450, 5],
