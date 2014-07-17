@@ -154,9 +154,8 @@ function legal_entity() {
 }
 
 function legal_entity_btn() {
-	$("#legal_entity").on('change',function(){
+	$("#legal_entity ,#individual").on('change',function(){
 		legal_entity();
-		$('input, select').styler(function(){legal_entity();}); 
 	});
 }
 
